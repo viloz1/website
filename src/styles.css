@@ -1,0 +1,17 @@
+.portrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20%;
+    width: 20%;
+  }
+
+body {
+    text-align: center;
+    font-family: 'times new roman',
+}
+
+.github{
+    font-size: 70px;
+    font-weight: bolder;
+}
