@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    gap: 250px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: left;
+    background-color: #114B5F;
+    align-items: center;
+    border: 1px solid #ccc;
+    height: 50px;
+}
+
