@@ -1,19 +1,33 @@
-import portrait from './portrait.jpg';
-
-import "./styles.css"
+import Home from './components/Home.jsx';
+import Footer from './components/Footer.jsx';
+import Navbar from './components/Navbar.jsx';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import {Route, Link, BrowserRouter as Router, Switch} from "react-router-dom";
 
 function App() {
+  let title = "Simon Johansson"
   return (
-    <div className="App">
-      	<h1>Hello!</h1>
-        <h2>My name is Simon Johansson and this is my website! It is currently under
-          construction, but if you wish to see my progress check out my github repository:
-        </h2>
-        <a href="https://github.com/viloz1/website" rel="noreferrer" className="github">
-        Github
-        </a>
-        <img src={portrait} alt="portrait" className="portrait" />
+    <Router>
+      
+      
+      <Navbar title={title}/>
+
+      <div className="App">
+
+        <Switch>
+
+          <Route exact path ="/" component={Home} />
+          <Route exact path ="/projects" component={Projects} />
+          <Route exact path ="/contact" component={Contact} />
+
+        </Switch>
+
     </div>
+    
+    <Footer/>
+    </Router>
+
   );
 }
 
