@@ -1,6 +1,5 @@
 .footer {
     display: flex;
-    gap: 250px;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -9,5 +8,17 @@
     align-items: center;
     border: 1px solid #ccc;
     height: 50px;
+    justify-content: space-evenly;
 }
+
+.bottom-icon a {color:#E2DADB;}         /* Unvisited link  */
+.bottom-icon a:visited {color:#E2DADB;} /* Visited link    */
+.bottom-icon a:hover {color:#E2DADB;}   /* Mouse over link */
+.bottom-icon a:active {color:#E2DADB;}  /* Selected link   */
+
+.bottom-icon svg {
+    height: 40px;
+    width: 40px;
+}
+
 
